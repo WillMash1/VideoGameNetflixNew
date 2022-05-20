@@ -47,8 +47,8 @@ const swiperWrapperThree = document.querySelector('.swiper-wrapper-three');
             freeMode: false
         },
         1700: {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
+            slidesPerView: 4,
+            slidesPerGroup: 4,
             loop: true,
             freeMode: false
         }
@@ -252,7 +252,7 @@ genreDropdown.addEventListener('click', ()=> {
     let gameType= event.target.innerText;
     let genre = selected.dataset['genre'];
     console.log(genre);
-    setBackgroundImg(swiperWrapper, 20, genre, 'genre');
+    setBackgroundImg(swiperWrapper, 8, genre, 'genre');
     genreDropdown.innerHTML = `<h1 > ${gameType} </h1> <p> &#9660; </p> `
 
   });
@@ -292,7 +292,7 @@ publisherDropdown.addEventListener('click', ()=> {
     let gameType = event.target.innerText;
     let publisher = selected.dataset['publisher'];
     console.log(publisher);
-    setBackgroundImg(swiperWrapperTwo, 20, publisher, 'publisher');
+    setBackgroundImg(swiperWrapperTwo, 8, publisher, 'publisher');
     publisherDropdown.innerHTML = `<h1 > ${gameType}     </h1> <p> </p> <p> &#9660; </p> `
 
   });
@@ -332,7 +332,7 @@ platformDropdown.addEventListener('click', ()=> {
     let gameType = event.target.innerText;
     let platform = selected.dataset['platform'];
     console.log(platform);
-    setBackgroundImg(swiperWrapperThree, 20, platform, 'platform');
+    setBackgroundImg(swiperWrapperThree, 8, platform, 'platform');
     platformDropdown.innerHTML = `<h1 > ${gameType} </h1> <p> &#9660; </p> `
   });
 
@@ -415,9 +415,9 @@ function setBackgroundImg(row, amount, request, type) {
 }
 
 
- setBackgroundImg(swiperWrapper, 20, 'indie', 'genre');
-setBackgroundImg(swiperWrapperTwo, 20, 'activison', 'publisher');
-setBackgroundImg(swiperWrapperThree, 20, '18', 'platform');
+ setBackgroundImg(swiperWrapper, 8, 'indie', 'genre');
+setBackgroundImg(swiperWrapperTwo, 8, 'activison', 'publisher');
+setBackgroundImg(swiperWrapperThree, 8, '18', 'platform');
 
 
 
